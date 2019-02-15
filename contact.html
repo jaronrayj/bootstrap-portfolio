@@ -12,19 +12,19 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-secondary">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #4AAAA5">
+    <nav class="navbar navbar-expand-md navbar-light border-bottom" style="background-color: #4AAAA5">
         <div class="col-md-2"></div>
 
-        <a class="navbar-brand" href="./index.html">Jaron Johnson</a>
+        <a class="navbar-brand p-3 border" href="./index.html" style="background-color: white">Jaron Johnson</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
 
         <div class="col-md-4"></div>
 
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ml-5 ml-5 ml-5">
                 <li class="nav-item active">
                     <a class="nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
                 </li>
@@ -38,58 +38,48 @@
         </div>
     </nav>
 
+    <br>
+
     <div class="container">
         <div class="card">
-            <!-- <div class="card-header">
-                About Me
-            </div> -->
-            <div class="card-body">
+            <div class="card-body mx-3">
                 <div class="row">
                     <div class="col-md-3"></div>
-                    <h4 class="card-title">About Me</h4>
+                    <h4 class="card-title ml-3">Contact</h4>
                 </div>
+                <!-- 1st row name-->
+                <div class="row border-top pt-3">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label for="name.input">Name</label>
+                            <input type="text" class="form-control" name="name.input" id="name.input" aria-describedby="helpId"
+                                placeholder="John Smith">
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 email-->
                 <div class="row">
-                    <div class="col-md-3">
-                        <img src="./SmileyJare.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
-                            alt="Jare Smiley">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label for="email.input">Email</label>
+                            <input type="text" class="form-control" name="email.input" id="email.input"
+                                aria-describedby="helpId" placeholder="example@domain.com">
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        <p class="card-text">Quick win best practices, but design thinking we're ahead of the curve
-                            on
-                            that
-                            one
-                            but five-year
-                            strategic plan we're ahead of the curve on that one rock Star/Ninja. What do you feel
-                            you
-                            would
-                            bring to the table
-                            if you were hired for this position feature creep. PowerPointless digital literacy.
-                            Marketing
-                            computer development
-                            html roi feedback team website we need to harvest synergy effects, for new economy
-                            highlights .
-                            Can
-                            we parallel
-                            path. Collaboration through advanced technlogy productize we're ahead of the curve on
-                            that
-                            one,
-                            what do you feel
-                            you would bring to the table if you were hired for this position strategic staircase,
-                            so
-                            please
-                            advise soonest nor
-                            (let's not try to) boil the ocean (here/there/everywhere). Strategic staircase
-                            diversify
-                            kpis
-                            and
-                            time vampire push
-                            back but tbrand terrorists. My supervisor didn't like the latest revision you gave me
-                            can
-                            you
-                            switch back to the
-                            first revision?.
-                        </p>
+                </div>
+                <!-- row 3 message-->
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <label for="message.input">Message</label>
+                            <textarea class="form-control" name="message.input" id="message.input" rows="5" placeholder="Talk to me!""></textarea>
                     </div>
+                    </div>  
+                </div>
+                <!-- row 4 submit -->
+                <div class="
+                                row">
+                    <a name="submit.input" id="submit.input" class="btn btn-secondary" href="#" role="button">Submit</a>
                 </div>
             </div>
         </div>
@@ -97,7 +87,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="card-footer text-muted">
+<div class="card-footer bg-light text-muted text-center fixed-bottom border-top">
         Copyright
     </div>
 
